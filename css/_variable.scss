@@ -1,0 +1,47 @@
+$dayBodyBgColor: #1702d8;
+$nightBodyBgColor: #02183b;
+
+$dayLinkColor: rgb(221, 221, 221);
+$nightLinkColor: rgb(221, 221, 221);
+
+$regularFontFamily: 'Lato', sans-serif;
+$regularFontColor: rgb(233, 233, 233);
+
+$labelColor: #414141;
+
+// Fonts
+$body-font: $regularFontFamily;
+
+// Font Weights
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$ultra: 800;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+
+// Material Colors
+$dark-theme: (
+  primary: rgba($black, 0.87),
+  secondary: rgba($black, 0.54),
+  disabled: rgba($black, 0.26)
+);
+$light-theme: (
+  primary: rgba($white, 1),
+  secondary: rgba($white, 0.7),
+  disabled: rgba($white, 0.3)
+);
+
+// Pen Colors
+$accent: #5380f7;
+
+// Base Setting
+$base-color: map-get($dark-theme, primary);
+$base-font-family: $body-font;
+$base-font-size: 14px;
+$base-font-weight: $regular;
+$base-line-height: 1.5em;

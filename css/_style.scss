@@ -1,0 +1,485 @@
+@import './common';
+@import './button';
+@import url('https://fonts.googleapis.com/css?family=Kanit:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap');
+
+header {
+  width: 100%;
+  padding: 50px 0;
+
+  nav {
+    width: 100%;
+
+    .menu {
+      list-style-type: none;
+
+      li {
+        float: left;
+
+        a {
+          display: block;
+          padding: 15px 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        float: none;
+        margin: auto;
+        width: max-content;
+      }
+    }
+  }
+}
+
+.header-tools {
+  padding: 15px 15px;
+
+  @media only screen and (max-width: 600px) {
+    float: none;
+    margin: auto;
+    width: max-content;
+  }
+
+  i {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #0e29a9;
+    margin-left: 3px;
+  }
+
+  .fa-moon {
+    color: #f1f0ee;
+    &:hover {
+      background-color: #424241;
+    }
+  }
+
+  .fa-sun {
+    color: #f1f0ee;
+
+    &:hover {
+      background-color: #ff9800 !important;
+    }
+  }
+
+  .fa-instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+
+  .fa-facebook-f:hover {
+    background-color: #3b5998 !important;
+  }
+
+  .fa-twitter:hover {
+    background-color: #1da1f2 !important;
+  }
+
+  .fa-github:hover {
+    background-color: #24292e !important;
+  }
+
+  .fa-linkedin-in:hover {
+    background-color: #0170ad !important;
+  }
+}
+
+.homepage-title {
+  width: 100%;
+  position: relative;
+  padding: 100px 0 0 0;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+
+  h3 {
+    font-family: $regularFontFamily;
+    font-size: 20px;
+    position: relative;
+
+    .quote {
+      top: 0;
+      left: 75px;
+      position: absolute;
+    }
+  }
+
+  h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: normal;
+    font-size: 10rem;
+    line-height: 116px;
+
+    span {
+      display: block;
+      color: rgba(252, 252, 252, 0.295);
+
+      @media only screen and (max-width: 600px) {
+        display: inline;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+
+  h2 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-family: $regularFontFamily;
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+
+  .profile-image {
+    width: 65.2173913043%;
+    position: absolute;
+    top: -60px;
+    right: -100px;
+    z-index: 400;
+    // background-image: radial-gradient(green 5%, $dayBodyBgColor 60%);
+
+    @media only screen and (max-width: 600px) {
+      position: relative;
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      overflow: hidden;
+      border: 2px solid aliceblue;
+      border-radius: 50%;
+      clear: both;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.intro-block {
+  width: 100%;
+  background: transparent;
+  position: relative;
+  z-index: 700;
+
+  .intro-paragraph {
+    text-align: center;
+    padding: 50px 50px 30px 50px;
+
+    p {
+      font-size: 20px;
+      font-family: $regularFontFamily;
+    }
+  }
+
+  .tech-stack {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 15px;
+    padding: 40px 50px;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .icon-block {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 60px;
+      padding: 10px;
+
+      i {
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .fa-react {
+        color: #61dafb;
+      }
+
+      .fa-node-js {
+        color: #43853d;
+      }
+
+      .fa-java {
+        color: #176f95;
+      }
+
+      .fa-php {
+        color: #7376ad;
+      }
+
+      .fa-laravel {
+        color: #e94c42;
+      }
+
+      .fa-wordpress {
+        color: rgb(31, 119, 162);
+      }
+
+      .fa-sass {
+        color: #cf649a;
+      }
+
+      .fa-html5 {
+        color: rgb(221, 75, 45);
+      }
+
+      .fa-css3-alt {
+        color: rgb(0, 108, 180);
+      }
+
+      .fa-js {
+        color: rgb(239, 216, 43);
+      }
+    }
+  }
+}
+
+.triangle {
+  position: absolute;
+  display: block;
+  float: right;
+  right: 0;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.to-left {
+  top: 270px;
+  width: 29.2825768668%;
+  height: 100px;
+  border-right: solid 650px rgba(252, 252, 252, 0.295);
+  border-bottom: solid 300px transparent;
+  border-top: solid 300px transparent;
+}
+
+.to-right {
+  width: 29.2825768668%;
+  height: 100px;
+  border-left: solid 650px $nightBodyBgColor;
+  border-bottom: solid 0px transparent;
+  border-top: solid 300px transparent;
+  z-index: 600;
+  top: 570px;
+}
+
+.experience {
+  border-left: 3px solid $regularFontColor;
+  padding: 0 30px;
+  margin-left: 185px;
+  @media (max-width: 767px) {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .item {
+    position: relative;
+    margin-bottom: 40px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -43px;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #000000;
+      border: 3px solid #009688;
+      border: 3px solid $regularFontColor;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #009688;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+  }
+  .company-name {
+    color: $regularFontColor;
+  }
+  .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    .fa {
+      margin-right: 8px;
+    }
+  }
+  .job-info {
+    position: absolute;
+    left: -185px;
+    top: 0;
+    .title {
+      color: $regularFontColor;
+    }
+    @media (max-width: 767px) {
+      position: static;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.hr {
+  border: 1px solid #d4d5d6;
+}
+
+footer {
+  .footer-info {
+    padding: 15px 0 25px 0;
+
+    .contact {
+      padding: 15px;
+      width: fit-content;
+      margin: auto;
+      font-size: 14px;
+
+      i {
+        font-size: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        float: none;
+        margin: auto;
+        width: max-content;
+      }
+    }
+  }
+}
+
+.blog-list {
+  padding: 30px 0;
+
+  h3 a {
+    font-size: 35px;
+    text-decoration: none;
+    color: #04b5ff;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .description-excerpt {
+    font-family: $regularFontFamily;
+    font-size: 17px;
+  }
+
+  .entry-meta {
+    padding: 10px 0;
+    display: block;
+    font-size: 14px;
+    color: rgb(190, 190, 190);
+  }
+}
+
+.single-blog {
+  padding: 0 0 0 50px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .entry-meta {
+    padding: 20px 0;
+    display: block;
+    font-size: 14px;
+    color: rgb(190, 190, 190);
+  }
+
+  .content {
+    p {
+      font-family: $regularFontFamily;
+      font-size: 17px;
+      line-height: 25px;
+      color: hsla(0, 0%, 100%, 0.88);
+    }
+  }
+}
+
+.page-title {
+  padding: 0 15px;
+  h3 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+  }
+}
+
+.github-tools {
+  padding: 10px 0px;
+  display: block;
+}
+
+.custom-list {
+  padding: 20px 50px;
+  display: inline-block;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: symbols('\1f449');
+    }
+  }
+}

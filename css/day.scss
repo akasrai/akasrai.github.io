@@ -1,0 +1,19 @@
+@import './variable';
+@import './style';
+
+body {
+  // background: linear-gradient(to right, $dayBodyBgColor, #3f51b5);
+  background: $dayBodyBgColor;
+}
+
+a {
+  color: $dayLinkColor;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.to-right {
+  border-left: solid 650px $dayBodyBgColor;
+}
