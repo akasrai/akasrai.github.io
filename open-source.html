@@ -1,35 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" type="image/png" href="./image/favicon.png" />
-    <link rel="stylesheet" href="./css/day.css" />
-    <link rel="stylesheet" href="./css/night.css" />
 
-    <title>Akash | A Fullstack Developer</title>
-  </head>
-  <body>
-    <header>
-      <nav class="container clearfix">
-        <ul class="menu pull-left">
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/open-source.html">Open Source</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/png" href="./image/favicon.png" />
+  <link rel="stylesheet" href="./css/day.css" />
+  <link rel="stylesheet" href="./css/night.css" />
+
+  <title>Akash | A Fullstack Developer</title>
+</head>
+
+<body>
+  <header>
+    <nav class="container clearfix">
+      <ul class="menu pull-left">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/open-source.html">Open Source</a></li>
+      </ul>
+
+      <div class="header-tools pull-right">
+        <a href="https://www.linkedin.com/in/akasrai/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/akasky_/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/akas.rae" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/akasrai_" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/akasrai" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <i class="fas fa-sun" onclick="toggleTheme(this)"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container clearfix ">
+    <div class="col-12 page-title">
+      <h3>Open Source &nbsp;&nbsp;<i class="fab fa-osi"></i></h3>
+      <hr class="hr" />
+
+      <div class="col-9 padding-0">
+
+        <div class="blog-list">
+          <h3>
+            <a target="_blank" href="https://github.com/akasrai/daily-quiz-mobile">
+              Daily Quiz
+            </a>
+          </h3>
+
+          <div class="description-excerpt clearfix">
+            This is simple react-native application for playing quiz daily. This app can be used in offices as
+            entertainment. A quiz season can be hosted and each day a new quiz
+            can be published. Player can track points and position in leaderboard. At the end of the season top there
+            winnner can be announced through the app.
+
+            <div class=" github-tools">
+              <a class="github-button" href="https://github.com/akasrai/daily-quiz-mobile" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star akasrai/daily-quiz-mobile on GitHub">Star</a>
+
+              <a class="github-button" href="https://github.com/akasrai/daily-quiz-mobile/fork" data-icon="octicon-repo-forked"
+                data-show-count="true" aria-label="Fork akasrai/daily-quiz-mobile on GitHub">Fork</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list">
+          <h3>
+            <a target="_blank" href="https://github.com/akasrai/easy-mail">
+              Easy Mail
+            </a>
+          </h3>
+
+          <div class="description-excerpt clearfix">
+            EasyMail is a simple tool for generating temporary emails for testing. EasyMail uses test mail api for
+            generating the emails.
+
+            <div class=" github-tools">
+              <a class="github-button" href="https://github.com/akasrai/easy-mail" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star akasrai/easy-mail on GitHub">Star</a>
+
+              <a class="github-button" href="https://github.com/akasrai/easy-mail/fork" data-icon="octicon-repo-forked"
+                data-show-count="true" aria-label="Fork akasrai/easy-mail on GitHub">Fork</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list">
+          <h3>
+            <a target="_blank" href="https://github.com/akasrai/ejs-portfolio">
+              Portfolio
+            </a>
+          </h3>
+
+          <div class="description-excerpt clearfix">
+            Portfolio is a complete CMS build with Nodejs, Ejs and Mongodb for
+            maintaining personal blogs, experience and works.
+
+            <div class=" github-tools">
+              <a class="github-button" href="https://github.com/akasrai/ejs-portfolio" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star akasrai/ejs-portfolio on GitHub">Star</a>
+
+              <a class="github-button" href="https://github.com/akasrai/ejs-portfolio/fork"
+                data-icon="octicon-repo-forked" data-show-count="true"
+                aria-label="Fork akasrai/ejs-portfolio on GitHub">Fork</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list">
+          <h3>
+            <a target="_blank" href="https://github.com/akasrai/Spring-boot-boilerplate">
+              Spring Boot Boilerplate
+            </a>
+          </h3>
+
+          <div class="description-excerpt clearfix">
+            A quick startup boilerplate with Spring Boot framework, JWT,
+            OAuth2 and RESTapi.
+
+            <div class="custom-list">
+              <h3>Features</h3>
+              <ul class="col-12 ">
+                <li>Login signup RESTapi</li>
+                <li>Login with Facebook</li>
+                <li>Login with Google</li>
+                <li>Login with Github</li>
+                <li>Email verification</li>
+              </ul>
+            </div>
+
+            <div class=" github-tools">
+              <a class="github-button" href="https://github.com/akasrai/Spring-boot-boilerplate"
+                data-icon="octicon-star" data-show-count="true"
+                aria-label="Star akasrai/Spring-boot-boilerplate on GitHub">Star</a>
+
+              <a class="github-button" href="https://github.com/akasrai/Spring-boot-boilerplate/fork"
+                data-icon="octicon-repo-forked" data-show-count="true"
+                aria-label="Fork akasrai/Spring-boot-boilerplate on GitHub">Fork</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list">
+          <h3>
+            <a target="_blank" href="https://github.com/akasrai/Laravel-Boilerplate">
+              Laravel Boilerplate
+            </a>
+          </h3>
+
+          <div class="description-excerpt clearfix">
+            A quick startup boilerplate with Laravel5, jQuery and MySQL
+            database.
+
+            <div class="custom-list">
+              <h3>Features</h3>
+              <ul class="col-12 ">
+                <li>Multiauth enabled</li>
+                <li>Multi role middleware for admins</li>
+                <li>Fully designed Admin dashboard</li>
+              </ul>
+            </div>
+
+            <div class=" github-tools">
+              <a class="github-button" href="https://github.com/akasrai/Laravel-Boilerplate" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star akasrai/Laravel-Boilerplate on GitHub">Star</a>
+
+              <a class="github-button" href="https://github.com/akasrai/Laravel-Boilerplate/fork"
+                data-icon="octicon-repo-forked" data-show-count="true"
+                aria-label="Fork akasrai/Laravel-Boilerplate on GitHub">Fork</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container clearfix">
+      <div class="col-12">
+        <hr class="hr" />
+      </div>
+      <div class="footer-info clearfix">
+        <div class="contact clearfix pull-left">
+          <i class="fas fa-envelope"></i><a href="mailto:akasrai@gmail.com"> akasrai@gmail.com</a><br />
+          <i class="fas fa-globe"></i>
+          <a href="https://akasrai.github.io/"> akasrai.github.io</a>
+        </div>
 
         <div class="header-tools pull-right">
-         <a
-            href="https://www.linkedin.com/in/akasrai/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/akasrai/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://www.instagram.com/akasky_/" target="_blank">
@@ -46,185 +215,12 @@
           </a>
           <i class="fas fa-sun" onclick="toggleTheme(this)"></i>
         </div>
-      </nav>
-    </header>
-
-    <div class="container clearfix ">
-      <div class="col-12 page-title">
-        <h3>Open Source &nbsp;&nbsp;<i class="fab fa-osi"></i></h3>
-        <hr class="hr" />
-
-        <div class="col-9 padding-0">
-          <div class="blog-list">
-            <h3>
-              <a
-                target="_blank"
-                href="https://github.com/akasrai/ejs-portfolio"
-              >
-                Portfolio
-              </a>
-            </h3>
-
-            <div class="description-excerpt clearfix">
-              Portfolio is a complete CMS build with Nodejs, Ejs and Mongodb for
-              maintaining personal blogs, experience and works.
-
-              <div class=" github-tools">
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/ejs-portfolio"
-                  data-icon="octicon-star"
-                  data-show-count="true"
-                  aria-label="Star akasky70/ejs-portfolio on GitHub"
-                  >Star</a
-                >
-
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/ejs-portfolio/fork"
-                  data-icon="octicon-repo-forked"
-                  data-show-count="true"
-                  aria-label="Fork akasky70/ejs-portfolio on GitHub"
-                  >Fork</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="blog-list">
-            <h3>
-              <a
-                target="_blank"
-                href="https://github.com/akasrai/Spring-boot-boilerplate"
-              >
-                Spring Boot Boilerplate
-              </a>
-            </h3>
-
-            <div class="description-excerpt clearfix">
-              A quick startup boilerplate with Spring Boot framework, JWT,
-              OAuth2 and RESTapi.
-
-              <div class="custom-list">
-                <h3>Features</h3>
-                <ul class="col-12 ">
-                  <li>Login signup RESTapi</li>
-                  <li>Login with Facebook</li>
-                  <li>Login with Google</li>
-                  <li>Login with Github</li>
-                  <li>Email verification</li>
-                </ul>
-              </div>
-
-              <div class=" github-tools">
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/Spring-boot-boilerplate"
-                  data-icon="octicon-star"
-                  data-show-count="true"
-                  aria-label="Star akasky70/Spring-boot-boilerplate on GitHub"
-                  >Star</a
-                >
-
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/Spring-boot-boilerplate/fork"
-                  data-icon="octicon-repo-forked"
-                  data-show-count="true"
-                  aria-label="Fork akasky70/Spring-boot-boilerplate on GitHub"
-                  >Fork</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="blog-list">
-            <h3>
-              <a
-                target="_blank"
-                href="https://github.com/akasrai/Laravel-Boilerplate"
-              >
-                Laravel Boilerplate
-              </a>
-            </h3>
-
-            <div class="description-excerpt clearfix">
-              A quick startup boilerplate with Laravel5, jQuery and MySQL
-              database.
-
-              <div class="custom-list">
-                <h3>Features</h3>
-                <ul class="col-12 ">
-                  <li>Multiauth enabled</li>
-                  <li>Multi role middleware for admins</li>
-                  <li>Fully designed Admin dashboard</li>
-                </ul>
-              </div>
-
-              <div class=" github-tools">
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/Laravel-Boilerplate"
-                  data-icon="octicon-star"
-                  data-show-count="true"
-                  aria-label="Star akasky70/Laravel-Boilerplate on GitHub"
-                  >Star</a
-                >
-
-                <a
-                  class="github-button"
-                  href="https://github.com/akasrai/Laravel-Boilerplate/fork"
-                  data-icon="octicon-repo-forked"
-                  data-show-count="true"
-                  aria-label="Fork akasky70/Laravel-Boilerplate on GitHub"
-                  >Fork</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+  </footer>
 
-    <footer>
-      <div class="container clearfix">
-        <div class="col-12">
-          <hr class="hr" />
-        </div>
-        <div class="footer-info clearfix">
-          <div class="contact clearfix pull-left">
-            <i class="fas fa-envelope"></i
-            ><a href="mailto:akasky70@gmail.com"> akasky70@gmail.com</a><br />
-            <i class="fas fa-globe"></i>
-            <a href="https://akasrai.github.io/"> akasrai.github.io</a>
-          </div>
+  <script src="./js/script.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
 
-          <div class="header-tools pull-right">
-            <a
-            href="https://www.linkedin.com/in/akasrai/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/akasky_/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/akas.rae" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/akasrai_" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://github.com/akasrai" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-            <i class="fas fa-sun" onclick="toggleTheme(this)"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </body>
 </html>
